@@ -1,6 +1,20 @@
 ## Markup
 
+-   [Input with label](https://github.com/hyesungoh/learningFrontEnd/tree/master/markup#input-with-label)
+-   [SASS color palete to values](https://github.com/hyesungoh/learningFrontEnd/tree/master/markup#sass-color-palete-to-values)
+-   [Style 예외처리](https://github.com/hyesungoh/learningFrontEnd/tree/master/markup#style-%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC)
+-   [contenteditable](https://github.com/hyesungoh/learningFrontEnd/tree/master/markup#contenteditable)
+-   [Hiding system input](https://github.com/hyesungoh/learningFrontEnd/tree/master/markup#hiding-system-input)
+
 ## Component
+
+## Cross browsing
+
+-   [Safari's input](https://github.com/hyesungoh/learningFrontEnd/tree/master/markup#safaris-input)
+-   [input's placeholder](https://github.com/hyesungoh/learningFrontEnd/tree/master/markup#inputs-placeholder)
+-   [read-only](https://github.com/hyesungoh/learningFrontEnd/tree/master/markup#read-only)
+-   [textarea resize](https://github.com/hyesungoh/learningFrontEnd/tree/master/markup#textarea-resize)
+-   [transition](https://github.com/hyesungoh/learningFrontEnd/tree/master/markup#transition)
 
 ## Learned from doing projects
 
