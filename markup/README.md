@@ -63,6 +63,23 @@ $f-bd-color: $gray2;
 <div contentediable="true"></div>
 ```
 
+#### Hiding system input
+
+```scss
+.some_input {
+    // 스크린 리더기에서 읽을 수 없거나 초점이 사라져 웹 접근성 지침에 어긋남
+    // display: none;
+    // visibility: hidden;
+    // opacity: 0;
+
+    // 시스템 속성을 없애기 위한 appearance 사용
+    // IE 11부터 하위 브라우져 지원 X
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+```
+
 <br/>
 
 ## Cross browsing
