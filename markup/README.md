@@ -26,7 +26,7 @@
 
 #### SASS color palete to values
 
-색상과 사용처를 나누어 디자인 수정 시 더욱 용이하게
+-   색상과 사용처를 나누어 디자인 수정 시 더욱 용이하게
 
 ```scss
 $gray1: #333333;
@@ -40,7 +40,7 @@ $f-bd-color: $gray2;
 
 #### Style 예외처리
 
-    - `not`을 사용하여 예외처리 가능
+-   `not`을 사용하여 예외처리 가능
 
 ```scss
 .something:not(:disabled) {
@@ -52,6 +52,18 @@ $f-bd-color: $gray2;
     ...
 }
 ```
+
+#### contenteditable
+
+-   div를 textarea처럼 사용 가능
+-   모든 브라우저에서 사용 가능
+-   disabled, readonly는 사용 불가
+
+```html
+<div contentediable="true"></div>
+```
+
+<br/>
 
 ## Cross browsing
 
@@ -92,3 +104,7 @@ input[readonly] {
     /* SUPPORT WITH ANOTHER */
 }
 ```
+
+#### textarea resize
+
+-   IE는 resize가 되지 않음
