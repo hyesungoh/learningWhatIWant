@@ -125,3 +125,14 @@ input[readonly] {
 #### textarea resize
 
 -   IE는 resize가 되지 않음
+
+#### transition
+
+```scss
+.something {
+    transition: background-color 0.3s ease;
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    -ms-transition: background-color 0.3s ease;
+}
+```
