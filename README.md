@@ -8,6 +8,9 @@
 
 ## Component
 
+-   [Context Menu](https://github.com/hyesungoh/learningFrontEnd/tree/master/ui_component#context-menu) contain stopPropagation, details tag
+-   [Scroll Spy](https://github.com/hyesungoh/learningFrontEnd/tree/master/ui_component#scroll-spy)
+
 ## Cross browsing
 
 -   [Safari's input](https://github.com/hyesungoh/learningFrontEnd/tree/master/markup#safaris-input)

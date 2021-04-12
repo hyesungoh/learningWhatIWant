@@ -3,6 +3,7 @@
 #### Context Menu
 
 -   Event.stopPropagation
+
     이벤트 캡쳐링과 버블링에 있어 현재 이벤트 이후의 전파를 막는다
 
 ```js
@@ -12,6 +13,7 @@ const someEvent = (e) => {
 ```
 
 -   html details tag
+
     summary와 자식 객체를 이용하여 구현가능
 
 ```html
@@ -49,6 +51,7 @@ detailsItem.setAttribute("open");
 #### Scroll Spy
 
 -   element.offsetTop
+
     상대적으로 가장 가까운 부모 요소의 상단에서부터의 픽셀값
 
 ```js
@@ -56,6 +59,7 @@ const ofs = element.offsetTop;
 ```
 
 -   element.clientHeight
+
     내부 높이를 픽셀로 반환, padding은 포함, margin은 비포함
 
 ```js
@@ -63,6 +67,7 @@ const clh = element.clientHeight;
 ```
 
 -   element.scrollIntoView
+
     호출된 요소가 사용자에게 표시되도록 요소의 상위 컨테이너를 스크롤
 
 ```js
@@ -74,6 +79,7 @@ element.scrollIntoView({
 ```
 
 -   Array.findIndex
+
     주어진 판별 함수를 만족하는 배열의 첫 번째 요소에 대한 인덱스를 반환, 없을 시 -1
 
 ```js
