@@ -94,6 +94,7 @@
 -   [createPortal](https://github.com/hyesungoh/skhuedIn/tree/main/frontend#createportal)
 -   [Cursor](https://github.com/hyesungoh/skhuedIn/tree/main/frontend#cursor)
 -   [Styled-components declaration](https://github.com/hyesungoh/skhuedIn/tree/main/frontend#styled-components-declaration)
+-   [React-query useQuery](https://github.com/hyesungoh/skhuedIn/tree/main/frontend#react-query-usequery)
 
 #### Gérmes
 
