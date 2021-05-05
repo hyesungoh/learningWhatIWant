@@ -102,3 +102,12 @@
 -   [Using TypeScript in Next.js](https://github.com/hyesungoh/ge-rmes#using-typescript-in-nextjs)
 -   [Using Styled-jsx](https://github.com/hyesungoh/ge-rmes#using-styled-jsx)
 -   [Absoulte path in Next.js](https://github.com/hyesungoh/ge-rmes#absoulte-path-in-nextjs)
+
+## I been through ...
+
+-   [react config folder](https://github.com/hyesungoh/MPMD#react-config-%ED%8F%B4%EB%8D%94-%EB%B3%B4%EC%9D%B4%EA%B2%8C-%ED%95%98%EB%8A%94-%EB%B2%95)
+-   [mime.lookup(path)](https://github.com/hyesungoh/MPMD#%EC%95%84%EB%9E%98-%EB%B6%80%EB%B6%84%EC%9D%B4-%EC%9E%98%EB%AA%BB%EB%90%90%EB%8B%A4%EB%8A%94-%EC%97%90%EB%9F%AC)
+-   [Kako map api](https://github.com/hyesungoh/Hey_Suwon#kakao-map-api)
+-   [ref is not a props](https://github.com/hyesungoh/skhuedIn/tree/main/frontend#issue)
+-   [Type 'RefObject' is missing the following properties](https://github.com/hyesungoh/skhuedIn/tree/main/frontend#issue)
+-   [idpiframe_initialization_failed, popup_closed_by_user](https://github.com/hyesungoh/skhuedIn/tree/main/frontend#issue)
