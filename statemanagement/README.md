@@ -29,6 +29,8 @@ function MyApp({ Component, pageProps }: AppProps) {
 
 -   data fetch와 cashing을 동시에 할 수 있는 것이 가장 큰 강점
 
+-   메모리, 퍼포먼스 측면의 이점도 있음
+
 -   재방문, 5분 경과등의 규칙으로 자동 Refresh
 
 -   `key` 값을 기준으로 재호출 방지
@@ -47,7 +49,7 @@ import { ReactQueryDevtools } from "react-query/devtools";
 <ReactQueryDevtools initialIsOpen={false} />
 ```
 
-#### Custom Hooks with React-query, Recoil
+#### Custom Hooks with React-query
 
 **Custom Hook**을 이용하여 data fetching, global state management를 하여, render 함수를 최대한 간소하게 만드는 것이 좋다
 
@@ -104,6 +106,8 @@ const newTodo = produce(todo, (nextTodo) => {
 한 번 실행 후, 정해진 시간 동안 무시 후, 재 실행
 
 적합한 곳 : Scroll
+
+Debouncing, Throttling을 포함한 다양한 기능이 있는 lodash 사용 가능
 
 #### Recoil Atoms
 

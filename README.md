@@ -103,6 +103,17 @@
 -   [Using Styled-jsx](https://github.com/hyesungoh/ge-rmes#using-styled-jsx)
 -   [Absoulte path in Next.js](https://github.com/hyesungoh/ge-rmes#absoulte-path-in-nextjs)
 
+#### globalStateManagement
+
+-   [Next.js's \_app.tsx](https://github.com/hyesungoh/learningFrontEnd/tree/master/statemanagement#_apptsx)
+-   [React-Query](https://github.com/hyesungoh/learningFrontEnd/tree/master/statemanagement#react-query)
+-   [React-Query-Devtool](https://github.com/hyesungoh/learningFrontEnd/tree/master/statemanagement#react-query-devtools)
+-   [Custom hook with React-Query](https://github.com/hyesungoh/learningFrontEnd/tree/master/statemanagement#custom-hooks-with-react-query)
+-   [React-Query queryClient.invalidateQueries](https://github.com/hyesungoh/learningFrontEnd/tree/master/statemanagement#react-query-queryclientinvalidatequeries)
+-   [Immer](https://github.com/hyesungoh/learningFrontEnd/tree/master/statemanagement#immer)
+-   [Debouncing and Throttling](https://github.com/hyesungoh/learningFrontEnd/tree/master/statemanagement#debouncing)
+-   [Recoil's atoms](https://github.com/hyesungoh/learningFrontEnd/tree/master/statemanagement#recoil-atoms)
+
 ## I been through ...
 
 -   [react config folder](https://github.com/hyesungoh/MPMD#react-config-%ED%8F%B4%EB%8D%94-%EB%B3%B4%EC%9D%B4%EA%B2%8C-%ED%95%98%EB%8A%94-%EB%B2%95)
