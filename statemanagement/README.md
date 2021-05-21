@@ -92,3 +92,43 @@ const newTodo = produce(todo, (nextTodo) => {
     nextTodo.fields.Done = checked;
 });
 ```
+
+#### Debouncing
+
+마지막 이벤트 기점으로 시간을 계산
+
+적합한 곳 : Input, 자동완성
+
+#### Throttling
+
+한 번 실행 후, 정해진 시간 동안 무시 후, 재 실행
+
+적합한 곳 : Scroll
+
+#### Recoil Atoms
+
+전역으로 사용하는 state와 매우 유사
+
+```tsx
+// store.ts
+import { atom } from "recoil";
+
+export const somethingState = atom<boolean>({
+    key: "somethingState",
+    default: false,
+});
+
+// component.tsx
+import { useRecoilState } from "recoil";
+import { somethingState } from "store";
+
+const [something, setSomething] = useRecoilState(somethingState);
+```
+
+#### React-Query + Global State 분류 예제
+
+Data fetching > React-Query
+
+선택한 값과 같은 임시적인 값이며 여러 곳에서 쓴다 > Global State
+
+새로고침 후에도 유지, url 공유시에도 똑같이 > query-parameter, url-parameter

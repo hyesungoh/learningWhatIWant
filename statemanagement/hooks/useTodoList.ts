@@ -1,4 +1,5 @@
 import axios from "axios";
+import { useMemo } from "react";
 import {
     useQuery,
     useMutation,
@@ -6,7 +7,10 @@ import {
     useQueryClient,
 } from "react-query";
 
+import { useRecoilValue } from "recoil";
+
 import { Record } from "../interfaces";
+import { doFilteringState } from "../store";
 
 const useTodoList = () => {
     const queryClient = useQueryClient();
@@ -53,6 +57,17 @@ const useTodoList = () => {
             },
         }
     );
+
+    const doFiltering = useRecoilValue(doFilteringState);
+    const todoList = useMemo(() => {
+        const arr = data ? (data.data.records as Record[]) : [];
+
+        if (doFiltering) {
+            return arr.filter((row) => row.fields.Done);
+        } else {
+            return arr;
+        }
+    }, [data, doFiltering]);
 
     return {
         todoList: data ? (data.data.records as Record[]) : [],
