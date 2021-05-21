@@ -56,3 +56,39 @@ import { ReactQueryDevtools } from "react-query/devtools";
 -   첫 번째 인자는 promise를 반환하는 함수
 
 -   post, update와 같이 cashing이 필요없는 요청일 때 사용
+
+-   onSuccess와 같이 상태에 따라 함수를 실행 가능
+
+#### React-Query queryClient.invalidateQueries
+
+데이터가 바뀌었을 때 `key` 값을 기준으로 refetching 가능
+
+```ts
+const refresh = () => {
+    queryClient.invalidateQueries(["todoList"]);
+};
+
+const createMutation = useMutation(
+    () => {
+        return axios.post("api/todo", {
+            fields: { Name: "새 투두", Done: false },
+        });
+    },
+    {
+        onSuccess: () => {
+            refresh();
+        },
+    }
+);
+```
+
+#### Immer
+
+mutation한 코드를 immutable하게 생성할 수 있게 됨
+
+```tsx
+import produce from "immer";
+const newTodo = produce(todo, (nextTodo) => {
+    nextTodo.fields.Done = checked;
+});
+```

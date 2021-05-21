@@ -1,7 +1,9 @@
 import { Button } from "@chakra-ui/button";
+import { Checkbox } from "@chakra-ui/checkbox";
 
 import styled from "@emotion/styled";
 import axios from "axios";
+import produce from "immer";
 import { useMutation } from "react-query";
 
 import useTodoList from "../hooks/useTodoList";
@@ -13,7 +15,27 @@ const Test = () => {
     return (
         <StyledMain>
             {todoList.map((todo) => (
-                <div key={todo.id}>{todo.fields.Name}</div>
+                <StyledTodo key={todo.id}>
+                    <Checkbox
+                        defaultChecked={todo.fields.Done === true}
+                        onChange={(e) => {
+                            const checked = e.target.checked;
+                            const newTodo = produce(todo, (nextTodo) => {
+                                nextTodo.fields.Done = checked;
+                            });
+                            updateTodo(newTodo);
+                        }}
+                    />
+                    {todo.fields.Name}
+                    <Button
+                        size={"xs"}
+                        onClick={() => {
+                            deleteTodo(todo.id);
+                        }}
+                    >
+                        삭제
+                    </Button>
+                </StyledTodo>
             ))}
 
             <Button
@@ -39,4 +61,11 @@ const StyledMain = styled.main`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+`;
+
+const StyledTodo = styled.div`
+    width: 500px;
+
+    display: flex;
+    justify-content: space-between;
 `;
