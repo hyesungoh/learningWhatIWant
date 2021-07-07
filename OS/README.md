@@ -133,7 +133,6 @@ _Windows와 상하 반대_
 
 ## 32Bit 환경
 
--   물리 메모리 제약 없음
 -   가상 메모리 최대 4GB
 -   즉, 프로세스별 할당 가능한 메모리 4GB
 -   커널 영역 메모리 1~2GB
@@ -153,3 +152,51 @@ Enterprise 2TB, Home 128GB
 
 최대 192GB, 최소 8GB
 
+## 실행파일
+
+-   프로세스는 메모리 관점
+-   메모리에 올릴 프로그램은? **실행파일**
+
+## 실행파일이 만들어지는 과정
+
+Editor -> Source, Makefile, HeaderFiles -> Preprocessor -> Compiler -> Object File(.obj), Libraries -> **Linker**
+
+Linker -> Debug Version (.exe)
+Linker -> Release Version (.exe)
+
+#### Preprocessor의 Input, Output
+
+-   Code
+
+#### Linker의 Input, Output
+
+-   Input
+
+    목적 코드, Link Script
+
+-   Output
+
+    실행파일
+
+## Loader
+
+-   로더는 실행파일을 이용해 프로세스를 만드는 과정
+-   실행파일의 내용으로 현재의 OS에서 구동할 수 있도록 만들어 준다.
+-   **OS가 제공한 가상메모리 환경에 맞도록 재배치(Relocation)**
+-   SYSTME API를 매핑시켜준다. 즉, SYSTEM API를 악성코드로 매칭하는 것도 가능
+-   컴파일러 벤더에 따라 실행파일 규격과 로더 규격이 다르므로 GCC 기준으로 설명
+
+## PLT / GOT
+
+-   Procedure Linkage Table
+
+실제 호출 코드를 담고 있는 테이블.
+시스템 라이브러리 등의 함수 호출이 이루어 짐
+
+-   Global Offset Table
+
+Symbol들의 위치를 가리키는 테이블.
+
+PLT 역시 GOT을 참조하여 프로시져들의 주소 획득
+
+즉, PLT가 외부 프로시져를 호출할 때, GOT를 참조해서 해당 주소로 점프
