@@ -42,6 +42,7 @@ Current State와 Desired State를 감시, 비교, 관리한다.
 ## 실습
 
 1. AWS EC2 CentOS 7 생성 (1 Master, 2 Worker)
+
 2. Set up
 
 ```bash
@@ -105,6 +106,7 @@ export KUBECONFIG=/etc/kubernetes/admin.conf
 
 kubectl get nodes
 
+# 위브넷
 kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl version | base64 | tr -d '\n')"
 ```
 
@@ -112,8 +114,6 @@ kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl versio
 # 각 워커 노드
 
 # 마스터 노드에서 kubeadm join 하는 명령어 복붗
-
-
 ```
 
 ```bash
@@ -143,68 +143,3 @@ NAME                                          STATUS     ROLES    AGE     VERSIO
 ip-172-31-38-33.us-east-2.compute.internal    NotReady   <none>   2m47s   v1.19.12
 ip-172-31-44-114.us-east-2.compute.internal   Ready      master   3m4s    v1.19.12
 ```
-
-
-## Kubenetes Controllers
-
--   ReplicationController
--   PelicaSet
--   Deployment
--   DaemonSet
--   job
--   Cronjob
-
-## ReplicationController
-
--   Pod의; 개수를 관리
-    -   current state 개수와 desired state 개수가 같을 때 까지 관리
-    -   pod template을 통해 pod가 부족하면 더 생성하고, pod가 많으면 종료시킴
-
-RC는 pod가 항상 실행되도록 유지하는 k8s의 기본적 resource이다.
-node가 클러스터에서 사리즌 경우나 노드에서 pod가 제거된 경우와 같이 어떤 이유로든 pod가 사라지면
-RC는 누락된 pod를 감지하고 대체 pod를 만든다.
-
-## ReplicationController Definition
-
--   RC의 세가지 요소
-    -   label selector
-    -   replica count
-    -   pod template
-
-RC의 selector에서 요구하는 pod가 replicas의 수만큼 존재하는지 확인 조정
-
-Replicas의 수에 맞춰 Pod의 개수를 늘리거나 줄여야하는데, 이때 template의 pod definition을 사용
-
-```yaml
-# RC
-apiVersion: v1
-kind: ReplicationController
-metadata:
-    name: myapp-rc
-spec:
-    replicas: 3
-    selector:
-        app: myapp
-        version: "1.14"
-````
-
-```yaml
-# pod
-apiVersion: v1 #k8s API version
-kind: pod #type of resouces
-metadata:
-    name: myapp_pod #pod의 이름
-    label:
-        app: myapp
-        version: "1.14"
-spec:
-    containers:
-        - image: nginx:1.14 # 컨테이너 이미지 정보
-    name: nginx-container # 컨테이너 이름
-```
-
-## kube-controller-manager
-
-컨트롤러를 구동하는 마스터 상의 컴포넌트
-논리적으로, 각 컨트롤러는 개별 프로세스이지만, 복잡성을 낮추기 위해 모든 단일 바이너리로 컴파일되고
-단일 프로세스 내에서 실행된다.
