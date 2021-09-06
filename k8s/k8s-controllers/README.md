@@ -1,5 +1,7 @@
 # Kubenetes Controllers
 
+![controllers](https://user-images.githubusercontent.com/26461307/132203591-1c249734-e60e-45f3-947d-5b4676f9474b.png)
+
 -   ReplicationController
 -   PelicaSet
 -   Deployment
@@ -182,4 +184,37 @@ spec:
                       - "-c"
                       - "echo 'Hello world'; sleep 5; echo 'Bye'"
         restartPolicy: Never
+```
+
+## CronJob
+
+-   Job 오브젝트에 Linux cronjob의 스케쥴링 기능을 추가
+-   다음과 같은 자동화 작업에 유리
+    -   Data backup
+    -   Send email
+    -   Cleaning tasks
+    -   Synthesis report
+-   Cronjob Controller가 관리
+
+```yaml
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+    name: centos-cronjob
+    startingDeadlineSeconds: 100
+spec:
+    schedule: "*/1 * * * *"
+    concurrencyPolicy: Allow
+    jobTemplate:
+        spec:
+            template:
+                spec:
+                    containers:
+                        - name: centos-container
+                          image: centos:7
+                          command: ["bash"]
+                          args:
+                              - "-c"
+                              - "echo 'Hello World'; sleep 5; echo 'Bye'"
+                    restartPolicy: Never
 ```

@@ -6,6 +6,8 @@
 
 > K8s = Kubernetes
 
+[k8s controller](https://github.com/hyesungoh/learningWhatIWant/tree/master/k8s/k8s-controllers)
+
 -   Container Cluster Manager
 -   컨테이너 오케스트레이터 (실행 및 관리)
 -   다양한 클라우드 및 베어메탈 환경지원
