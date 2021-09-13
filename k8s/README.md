@@ -2,6 +2,11 @@
 
 ## [Orchestration](https://github.com/hyesungoh/learningFrontEnd/tree/master/k8s/Orchestration)
 
+## [Controllers](https://github.com/hyesungoh/learningFrontEnd/tree/master/k8s/k8s-controllers)
+
+## [Services](https://github.com/hyesungoh/learningFrontEnd/tree/master/k8s/k8s-services)
+## [Ingress](https://github.com/hyesungoh/learningFrontEnd/tree/master/k8s/k8s-ingress)
+
 ## Kubernetes 소개
 
 > K8s = Kubernetes
