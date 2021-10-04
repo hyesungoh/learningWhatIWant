@@ -1,3 +1,9 @@
+# Volumes
+
+- k8s는 실제 데이터가 있는 디렉토리를 보존하기 위해서 저장소 볼륨을 정의
+- Pod같은 최상위 리소스는 아니지만, Pod의 일부로 정의되며, Pod와 라이프 사이클이 같다
+
+
 ```yaml
 apiVersion: v1
 kind: Pod
