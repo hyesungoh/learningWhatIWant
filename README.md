@@ -111,13 +111,6 @@
 - [Styled-components declaration](https://github.com/hyesungoh/skhuedIn/tree/main/frontend#styled-components-declaration)
 - [React-query useQuery](https://github.com/hyesungoh/skhuedIn/tree/main/frontend#react-query-usequery)
 
-#### Gérmes
-
-- [Create-next-app](https://github.com/hyesungoh/ge-rmes#create-next-app)
-- [Using TypeScript in Next.js](https://github.com/hyesungoh/ge-rmes#using-typescript-in-nextjs)
-- [Using Styled-jsx](https://github.com/hyesungoh/ge-rmes#using-styled-jsx)
-- [Absoulte path in Next.js](https://github.com/hyesungoh/ge-rmes#absoulte-path-in-nextjs)
-
 #### globalStateManagement
 
 - [Next.js's \_app.tsx](https://github.com/hyesungoh/learningFrontEnd/tree/master/statemanagement#_apptsx)
