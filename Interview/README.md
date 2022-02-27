@@ -6,7 +6,11 @@
 
 <details>
 
-<summary>👉 DOM event life cycle</summary>
+<summary>
+
+**DOM event life cycle**
+
+</summary>
 
 이벤트는 각 이벤트가 갖게 되는 전파 경로를 따라 전파됩니다.
 최상위 노드인 Window부터 이벤트를 부착한 노드까지 전달되는 Capture 페이즈 (Event Capturing),
