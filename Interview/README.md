@@ -82,6 +82,19 @@ Task 큐에는 setTimeout과 같은 Web API가 위치하는 것으로 알고 있
 
 </details>
 
+<details>
+
+<summary> <strong>type alias와 interface의 차이점</strong> </summary>
+
+가장 큰 차이라면 interface는 객체 혹은 클래스에만 적용할 수 있다는 점입니다.
+
+합성에서 성능 차이가 있는 것으로 알고 있는데 interface는 합성할 경우 이가 캐싱되지만, type은 모든 구성요소에 대한 타입을 체크하기 때문입니다.
+
+- computed value는 type에서만 사용가능
+- type의 경우 확장시 동일 키 값에 대해 never가 할당될 수 있음
+
+</details>
+
 <!--
 <details>
 
