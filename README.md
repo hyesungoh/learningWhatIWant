@@ -103,14 +103,14 @@
 
 #### SKHUedIn
 
-- [React Markdown](https://github.com/hyesungoh/skhuedIn/tree/main/frontend#react-markdown)
-- [React MarkDownEditor](https://github.com/hyesungoh/skhuedIn/tree/main/frontend#react-mde)
-- [Redux useSelector](https://github.com/hyesungoh/skhuedIn/tree/main/frontend#redux-useselector)
-- [Redux useDispatch](https://github.com/hyesungoh/skhuedIn/tree/main/frontend#usedispatch)
-- [createPortal](https://github.com/hyesungoh/skhuedIn/tree/main/frontend#createportal)
-- [Cursor](https://github.com/hyesungoh/skhuedIn/tree/main/frontend#cursor)
-- [Styled-components declaration](https://github.com/hyesungoh/skhuedIn/tree/main/frontend#styled-components-declaration)
-- [React-query useQuery](https://github.com/hyesungoh/skhuedIn/tree/main/frontend#react-query-usequery)
+- [React Markdown](https://github.com/hyesungoh/skhuedIn#react-markdown)
+- [React MarkDownEditor](https://github.com/hyesungoh/skhuedIn#react-mde)
+- [Redux useSelector](https://github.com/hyesungoh/skhuedIn#redux-useselector)
+- [Redux useDispatch](https://github.com/hyesungoh/skhuedIn#usedispatch)
+- [createPortal](https://github.com/hyesungoh/skhuedIn#createportal)
+- [Cursor](https://github.com/hyesungoh/skhuedIn#cursor)
+- [Styled-components declaration](https://github.com/hyesungoh/skhuedIn#styled-components-declaration)
+- [React-query useQuery](https://github.com/hyesungoh/skhuedIn#react-query-usequery)
 
 #### globalStateManagement
 
