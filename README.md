@@ -7,6 +7,7 @@
 - [프로젝트를 통해 배운 것](#Learned-from-doing-projects)
 - [겪어왔던 에러](#I-been-through)
 - [AWS](https://github.com/hyesungoh/learningWhatIWant/tree/master/AWS)
+- [Algorithm](https://github.com/hyesungoh/learningWhatIWant/tree/master/Algorithm)
 - [Framer-motion](https://github.com/hyesungoh/learningWhatIWant/tree/master/Framer-motion)
 - [MSA](https://github.com/hyesungoh/learningWhatIWant/tree/master/MSA)
 - [OS](https://github.com/hyesungoh/learningWhatIWant/tree/master/OS)
