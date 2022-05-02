@@ -80,7 +80,7 @@ Animation frames에는 requestAnimationFrame과 같은 애니메이션 관련 �
 
 Task 큐에는 setTimeout과 같은 Web API가 위치하는 것으로 알고 있습니다.
 
-> 콜백 큐에서 실행 스택으로 옮겨지는 우선 순위는 Microtask > ANimation frames, Task 순입니다.
+> 콜백 큐에서 실행 스택으로 옮겨지는 우선 순위는 Microtask > Animation frames, Task 순입니다.
 
 </details>
 
