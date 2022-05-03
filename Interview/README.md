@@ -6,6 +6,28 @@
 
 <details>
 
+<summary> <strong>오버로딩과 오버라이딩의 차이점</strong> </summary>
+
+오버로딩 : 같은 메소드지만 매개변수에 차이점을 두는 것
+
+```typescript
+// typescript 오버로딩
+function add(a: number, b: number): number;
+
+function add(a: number, b: number, c: number): number;
+
+// 위 오버로드 선언을 모두 만족하도록 구현해야 함
+function add(a: number, b: number, c?: number): number {
+  // 구현
+}
+```
+
+오버라이딩 : 상속 관계에 있는 클래스 간에 같은 이름의 메소드를 정의
+
+</details>
+
+<details>
+
 <summary> <strong>브라우저 렌더링 과정을 설명해주세요</strong> </summary>
 
 서버에서 응답받은 HTML 데이터를 파싱한 후 해당 결과를 통해 DOM 트리를 만듭니다.
