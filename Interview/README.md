@@ -6,7 +6,7 @@
 
 <details>
 
-<summary> <strong>오버로딩과 오버라이딩의 차이점</strong> </summary>
+<summary> <strong>오버로딩 vs 오버라이딩 w/ typescript</strong> </summary>
 
 오버로딩 : 같은 메소드지만 매개변수에 차이점을 두는 것
 
@@ -70,6 +70,37 @@ const는 상수로써 값을 재할당할 수 없지만, let은 가능하며 이
 
 <details>
 
+<summary> <strong>호이스팅이란?</strong> </summary>
+
+자바스크립트 엔진은 선언과 실행을 구분해서 처리한다.
+
+이 때 선언을 먼저 처리하기 때문에, 선언문이 코드 상단으로 "끌어올려지는" 듯한 효과를 호이스팅이라 한다.
+
+```js
+// javascript
+var a = 1;
+
+// 위 코드는 크게 var a 선언문과 a = 1 대입문으로 구분할 수 있다.
+// 1. 컴파일 단계에서 var a가 등장하면 스코프 내에 변수 a가 존재하는 지 검색
+// 2. 존재할 시 선언문을 무시, 없다면 a를 스코프 컬렉션 내에 생성하도록 요청
+// 3. 코드 실행 시점에서 a = 1 대입문을 처리한다.
+// 4. 변수 a가 현재 스코프에 있으면 대입을 실행하고, 없다면 바깥 스코프까지 거슬러 올라간다.
+```
+
+```js
+add();
+
+function add() {
+  // something...
+}
+
+// 마찬가지로 선언이 먼저 되기(호이스팅 되기) 때문에 오류를 일으키지 않는다.
+```
+
+</details>
+
+<details>
+
 <summary> <strong>CORS는 무엇이며, 어떻게 대처하나요?</strong> </summary>
 
 동일한 출처의 리소스만 사용해야하는 원칙인 SOP의 허용조건으로, Cross Origin Resource Sharing의 약자입니다.
@@ -118,6 +149,19 @@ Task 큐에는 setTimeout과 같은 Web API가 위치하는 것으로 알고 있
 - type의 경우 확장시 동일 키 값에 대해 never가 할당될 수 있음
 
 </details>
+
+<!-- <details>
+
+<summary> <strong>FLUX 패턴이란</strong> </summary>
+
+양방향 데이터 흐름을 갖고 있는 MVC 패턴의 복잡도라는 단점을 해결하기 위해 Facebook에서 고안해냄.
+
+1. 액션 생성자 호출
+2. 디스패쳐로 전달
+3. 스토어에 전달
+4.
+
+</details> -->
 
 <!--
 <details>
