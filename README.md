@@ -1,6 +1,7 @@
 ## Link
 
 - [`개인 블로그`](https://www.hyesungoh.xyz)
+- [`짧은 팁들 - Issue`](https://github.com/hyesungoh/learningWhatIWant/issues)
 - [Books](https://github.com/hyesungoh/learningWhatIWant/tree/master/Books)
 - [Markup](#markup)
 - [Component](#component)
@@ -13,7 +14,7 @@
 - [OS](https://github.com/hyesungoh/learningWhatIWant/tree/master/OS)
 - [Kubernetes](https://github.com/hyesungoh/learningWhatIWant/tree/master/k8s)
 - [Interview](https://github.com/hyesungoh/learningWhatIWant/tree/master/Interview)
-- [정체되지 않는 프론트엔드 개발자의 일하는 방식](https://github.com/hyesungoh/learningWhatIWant/tree/master/sustainableCodeAndImprovePerformance)
+<!-- - [정체되지 않는 프론트엔드 개발자의 일하는 방식](https://github.com/hyesungoh/learningWhatIWant/tree/master/sustainableCodeAndImprovePerformance) -->
 
 ## Markup
 

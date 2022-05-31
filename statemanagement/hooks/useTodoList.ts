@@ -17,7 +17,7 @@ const useTodoList = () => {
 
     const { data, isLoading } = useQuery("todoList", () => {
         return axios.get("/api/todo");
-    });
+    }); 
 
     const refresh = () => {
         queryClient.invalidateQueries(["todoList"]);
