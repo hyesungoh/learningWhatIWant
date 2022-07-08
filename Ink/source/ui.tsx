@@ -1,23 +1,18 @@
-import React, { FC, useState } from "react";
-import { Box, Newline, Text } from "ink";
-import TextInput from "ink-text-input";
+import React, { FC, useEffect } from "react";
+import { Box, Text } from "ink";
 
-const App: FC<{ name?: string }> = ({ name = "Stranger" }) => {
-  const [nickname, setNickname] = useState<string>("");
+import shell from "shelljs";
+
+const App: FC<{ name?: string }> = () => {
+  useEffect(() => {
+    shell.exec("git clone https://github.com/hyesungoh/comet-land");
+  }, []);
+
+  if (shell.which("git")) return <Text>git!</Text>;
 
   return (
     <Box>
-      <Text>
-        Hello, <Text color="green">{name}</Text>
-      </Text>
-
-      <Newline />
-      <Newline />
-      <TextInput
-        placeholder="Enter your name"
-        value={nickname}
-        onChange={setNickname}
-      />
+      <Text>Cloning Comet land ... </Text>
     </Box>
   );
 };
