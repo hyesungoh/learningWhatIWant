@@ -201,4 +201,46 @@ cargo doc --open
 
 위 명령어를 통해 로컬에서 모든 의존 패키지들이 제공하는 문서들을 빌드해 브라우저에 표시할 수 있음
 
+## match 표현식
 
+```rs
+use std::cmp::Ordering;
+
+fn main() {
+  // ...
+
+  match guess.cmp(&secret_number) {
+      Ordering::Less    => println!("Too small!"),
+      Ordering::Greater => println!("Too big!"),
+      Ordering::Equal   => println!("You win!"),
+  }
+}
+```
+
+### `std::cmp::Ordering`
+
+`Ordering`은 `Result`와 같은 열거형(enum)이지만, Ordering의 값은 Less, Greater, Equal로 이루어져 있음
+
+### `cmp` 메소드
+
+비교 가능한 모든 것들에 대해 호출할 수 있는 메소드이며, 비교하고 싶은 것들의 참조자를 받아 사용할 수 있음
+
+`cmp`는 `Ordering` 열거형을 반환하는데 이 때 match 표현문을 이용해 두 값을 비교한 결과인 Ordering 값에 따라 무엇을 할 것인지 결정할 수 있음
+
+### `match`
+
+match 표현식은 `arm`으로 이루어져 있음
+
+> arm은 하나의 패턴과 표현식에서 주어진 값이 맞는다면 실행할 코드로 이루어져 있음
+
+러스트는 패턴에 맞는지 순서대로 확인함
+
+즉, `cmp` 메소드의 반환 값이 `Ordering::Greater`일 시 다음과 같은 형태로 실행되는 것
+
+```diff
+match Ordering::Greater {
+-    Ordering::Less    => println!("Too small!"), // 일치하지 않음
++    Ordering::Greater => println!("Too big!"),   // 일치함
+-    Ordering::Equal   => println!("You win!"),   // 위에서 일치하여 실행되지 않음
+}
+```
