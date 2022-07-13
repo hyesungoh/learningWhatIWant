@@ -244,3 +244,39 @@ match Ordering::Greater {
 -    Ordering::Equal   => println!("You win!"),   // 위에서 일치하여 실행되지 않음
 }
 ```
+
+## 타입 parse
+
+아래와 같이 string 타입을 `u32`(32비트의 부호없는 정수) 형태로 parse할 수 있음
+
+```rs
+let mut guess = String::new(); // 선언
+
+let guess: u32 = guess.trim().parse().expect("Please type a number!");
+```
+
+### 변수 shadow
+
+위 코드에서는 `guess`라는 이름의 변수가 생성되었으나, 다시 선언하는 것을 허용함
+
+이걸 변수를 가린다(shadow)라고 하는데, 러스트는 이를 허락한다고 함
+
+종종 하나의 값을 현재 타입에서 다른 타입으로 변환하고 싶을 경우에 사용됨
+
+### trim
+
+다른 언어의 문자열 메소드 trim과 같이 앞뒤의 공백을 제거함
+
+> 현재 상황에서는 사용자가 5을 입력하고 엔터를 눌렀을 때, `5\n`이 저장되게 될텐데 trim 메소드가 `\n`을 제거하고 `5`만 남도록 처리함
+
+### parse
+
+문자열의 parse 메소드는 문자열을 숫자형으로 파싱함
+
+이 메소드는 다양한 종류의 정수형으로 변환하므로 `: u32`, `: i32`, `: i64`처럼 정확한 타입을 명시해야함
+
+### expect
+
+위의 `read_line`에서 다룬 내용처럼 parse 메소드는 실패할 경우를 위해 `Result` 타입을 반환함
+
+그렇기 때문에 `expect`를 이용해 예외처리 할 수 있음
