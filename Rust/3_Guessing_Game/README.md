@@ -280,3 +280,37 @@ let guess: u32 = guess.trim().parse().expect("Please type a number!");
 위의 `read_line`에서 다룬 내용처럼 parse 메소드는 실패할 경우를 위해 `Result` 타입을 반환함
 
 그렇기 때문에 `expect`를 이용해 예외처리 할 수 있음
+
+## 반복문
+
+```rs
+loop {
+    // ...
+
+    match guess.cmp(&secret_number) {
+        Ordering::Less    => println!("Too small!"),
+        Ordering::Greater => println!("Too big!"),
+        Ordering::Equal   => {
+            println!("You win!");
+            break;
+        }
+    }
+}
+```
+
+`loop` 키워드를 통해 무한한 반복을, `break`를 통해 반복문 탈출이 가능
+
+### 잘못된 입력시 `continue`
+
+```rs
+let guess: u32 = guess.trim().parse().expect("Please type a number!");
+```
+
+기존의 expect 메소드를 사용했던 위의 코드를 아래의 `match` 표현식을 이용해 구체적인 에러 핸들링을 위해 사용할 수 있음
+
+```rs
+let guess: u32 = match guess.trim().parse() {
+    Ok(num) => num,
+    Err(_) => continue,
+};
+```
