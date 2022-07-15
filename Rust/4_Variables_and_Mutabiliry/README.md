@@ -22,3 +22,40 @@
 ```Rust
 const MAX_LENGTH: u32 = 1000;
 ```
+
+## Shadowing
+
+```Rust
+fn main() {
+  let x = 5;
+  let x = x + 1;
+  let x = x - 2;
+  println!("x is {}", x);
+}
+```
+
+위와 같이 선언한 변수와 같은 이름의 새 변수를 선언할 수 있고
+
+새 변수가 이전 변수를 **가렸다**는 의미에서 shadowed라고 표현함
+
+### `mut`으로 선언하는 것과 차이점
+
+- `let` 키워드를 사용하지 않고 변수에 새로 값을 대입하려고 하면 컴파일 시에 에러 발생
+
+  - 즉, 몇 번 값을 변경할 수 있지만 그 이후에는 불변성을 갖게되는 것
+
+- 변수의 타입을 변경할 수 있음
+
+```Rust
+let spaces = "   "; // string 타입
+let spaces = spaces.len(); // number 타입
+```
+
+이를 `mut`을 이용해 구현한다면...
+
+```Rust
+let mut spaces = "    ";
+spaces = spaces.len();
+```
+
+이는 변수의 타입이 같지 않아 변경할 수 없다는 컴파일 에러를 발생시키게 됨
