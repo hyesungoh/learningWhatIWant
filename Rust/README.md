@@ -6,3 +6,4 @@
 - [Hello World](https://github.com/hyesungoh/learningWhatIWant/tree/master/Rust/1_Hello_World)
 - [Cargo](https://github.com/hyesungoh/learningWhatIWant/tree/master/Rust/2_Cargo)
 - [Guessing Game](https://github.com/hyesungoh/learningWhatIWant/tree/master/Rust/3_Guessing_Game)
+- [Variables and Mutability](https://github.com/hyesungoh/learningWhatIWant/tree/master/Rust/4_Variables_and_Mutability)
