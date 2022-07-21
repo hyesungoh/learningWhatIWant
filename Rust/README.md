@@ -8,3 +8,4 @@
 - [Guessing Game](https://github.com/hyesungoh/learningWhatIWant/tree/master/Rust/3_Guessing_Game)
 - [Variables and Mutability](https://github.com/hyesungoh/learningWhatIWant/tree/master/Rust/4_Variables_and_Mutability)
 - [Data types](https://github.com/hyesungoh/learningWhatIWant/tree/master/Rust/5_Data_Types)
+- [Functions](https://github.com/hyesungoh/learningWhatIWant/tree/master/Rust/6_Functions)
