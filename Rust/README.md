@@ -9,3 +9,4 @@
 - [Variables and Mutability](https://github.com/hyesungoh/learningWhatIWant/tree/master/Rust/4_Variables_and_Mutability)
 - [Data types](https://github.com/hyesungoh/learningWhatIWant/tree/master/Rust/5_Data_Types)
 - [Functions](https://github.com/hyesungoh/learningWhatIWant/tree/master/Rust/6_Functions)
+- [Comments and Documentation Comments](https://github.com/hyesungoh/learningWhatIWant/tree/master/Rust/7_Comments_and_Documentation_Comments)
