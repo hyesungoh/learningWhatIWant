@@ -32,3 +32,21 @@ module.exports = withTM(nextConfig);
 ```
 
 > 'next/babel' 오류 시, eslint extends에 'next/babel' 추가
+
+## Controls
+
+`@react-three/drei` 를 설치해 여러가지 컨트롤 컴포넌트를 사용할 수 있음
+
+```BASH
+yarn add @react-three/drei
+```
+
+```tsx
+<Canvas camera={{ near: 0.1, far: 1000, zoom: 1 }}>
+  <OrbitControls />
+
+  <Suspense fallback={null}>
+    <Scene />
+  </Suspense>
+</Canvas>
+```
