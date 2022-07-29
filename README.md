@@ -3,6 +3,7 @@
 - [`개인 블로그`](https://www.hyesungoh.xyz)
 - [`짧은 팁들 - Issue`](https://github.com/hyesungoh/learningWhatIWant/issues)
 - [Books](https://github.com/hyesungoh/learningWhatIWant/tree/master/Books)
+- [Three.js](https://github.com/hyesungoh/learningWhatIWant/tree/master/Threejs)
 - [Rust](https://github.com/hyesungoh/learningWhatIWant/tree/master/Rust)
 - [Markup](#markup)
 - [Component](#component)
