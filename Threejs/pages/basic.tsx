@@ -1,4 +1,5 @@
-import { Canvas } from "@react-three/fiber";
+import { Canvas, useLoader } from "@react-three/fiber";
+import { FBXLoader } from "three/examples/jsm/loaders/FBXLoader";
 
 export default function home() {
   return (
@@ -13,7 +14,13 @@ export default function home() {
           <boxGeometry />
           <meshStandardMaterial />
         </mesh>
+        <Pill />
       </Canvas>
     </div>
   );
+}
+
+function Pill() {
+  const fbx = useLoader(FBXLoader, "/pill.fbx");
+  return <primitive object={fbx} />;
 }

@@ -50,3 +50,17 @@ yarn add @react-three/drei
   </Suspense>
 </Canvas>
 ```
+
+## FBX model 색상 지정
+
+```tsx
+function Pill() {
+  const fbx = useFBX("/pill.fbx");
+
+  return (
+    <mesh {...fbx.children[0]}>
+      <meshStandardMaterial color="red" />
+    </mesh>
+  );
+}
+````
