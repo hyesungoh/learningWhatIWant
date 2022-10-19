@@ -8,9 +8,14 @@ import {
 } from "@react-three/fiber";
 import { Suspense, useEffect, useMemo, useRef } from "react";
 
-import { Environment, OrbitControls, useFBX } from "@react-three/drei";
+import { Environment, OrbitControls, useFBX, useGLTF } from "@react-three/drei";
 import { FBXLoader } from "three/examples/jsm/loaders/FBXLoader";
-import { DynamicDrawUsage, MeshBasicMaterial } from "three";
+import {
+  DynamicDrawUsage,
+  Material,
+  MeshBasicMaterial,
+  MeshStandardMaterial,
+} from "three";
 
 function Cube() {
   const cube = useRef<THREE.Mesh>(null);
@@ -60,12 +65,17 @@ export default function home() {
   );
 }
 
+const a = new MeshStandardMaterial({ color: "red" });
+
 function Pill() {
   const fbx = useFBX("/pill.fbx");
+  const { nodes } = useGLTF("/pill.glb") as any;
 
   return (
-    <mesh {...fbx.children[0]}>
-      <meshStandardMaterial color="red" />
-    </mesh>
+    <>
+      <mesh geometry={nodes.pSphere9.geometry} rotation={[10, 10, 100]}>
+        <meshStandardMaterial color="red" />
+      </mesh>
+    </>
   );
 }
