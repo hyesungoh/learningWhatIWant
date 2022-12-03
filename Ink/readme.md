@@ -35,7 +35,7 @@ npm install ink-text-input
 import TextInput from "ink-text-input";
 
 function App() {
-  const [nickname, setNickname] = useState < string > "";
+  const [nickname, setNickname] = useState<string>("");
 
   return (
     <Box>
