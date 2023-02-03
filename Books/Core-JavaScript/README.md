@@ -7,3 +7,4 @@
 3. [this](https://github.com/hyesungoh/learningWhatIWant/tree/master/Books/Core-JavaScript/3_this)
 4. [콜백 함수](https://github.com/hyesungoh/learningWhatIWant/tree/master/Books/Core-JavaScript/4_%EC%BD%9C%EB%B0%B1_%ED%95%A8%EC%88%98)
 5. [클로저](https://github.com/hyesungoh/learningWhatIWant/tree/master/Books/Core-JavaScript/5_%ED%81%B4%EB%A1%9C%EC%A0%80)
+6. [프로토타입](https://github.com/hyesungoh/learningWhatIWant/tree/master/Books/Core-JavaScript/6_%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85)
