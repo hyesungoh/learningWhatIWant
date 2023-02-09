@@ -150,6 +150,42 @@ Task 큐에는 setTimeout과 같은 Web API가 위치하는 것으로 알고 있
 
 </details>
 
+<details>
+
+<summary> <strong>클로저란 ?</strong> </summary>
+
+어떤 함수에서 선언한 변수를 참조하는 내부함수를 외부로 전달할 경우, 함수의 실행 컨텍스트가 종료된 후에도 해당 변수가 사라지지 않는 현상
+
+> 어떤 함수 A에서 선언한 변수 foo를 참조하는 내부함수 B를 외부로 전달할 경우 A의 실행 컨텍스트가 종료된 이후에도 변수 foo가 사라지지 않는 현상
+
+```js
+var outer = function () {
+  var a = 1;
+  var inner = function () {
+    return ++a;
+  };
+
+  return inner;
+};
+
+var outer2 = outer();
+console.log(outer2()); // 2
+console.log(outer2()); // 3
+```
+
+</details> -->
+
+<!--
+<details>
+
+<summary> <strong>제목</strong> </summary>
+
+답변
+
+</details>
+
+
+
 <!-- <details>
 
 <summary> <strong>FLUX 패턴이란</strong> </summary>
