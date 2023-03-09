@@ -173,7 +173,7 @@ console.log(outer2()); // 2
 console.log(outer2()); // 3
 ```
 
-</details> -->
+</details>
 
 <!--
 <details>
