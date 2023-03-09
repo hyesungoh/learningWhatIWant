@@ -7,3 +7,4 @@
 - [코딩을 지탱하는 기술](https://github.com/hyesungoh/learningWhatIWant/tree/master/Books/%EC%BD%94%EB%94%A9%EC%9D%84%EC%A7%80%ED%83%B1%ED%95%98%EB%8A%94%EA%B8%B0%EC%88%A0)
 - [Effective TypeScript](https://github.com/hyesungoh/learningWhatIWant/tree/master/Books/Effective-TypeScript)
 - [Core JavaScript](https://github.com/hyesungoh/learningWhatIWant/tree/master/Books/Core-JavaScript)
+- [오브젝트](https://github.com/hyesungoh/learningWhatIWant/tree/master/Books/%EC%98%A4%EB%B8%8C%EC%A0%9D%ED%8A%B8)
