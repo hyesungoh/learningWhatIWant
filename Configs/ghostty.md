@@ -27,6 +27,7 @@ palette = 13=#b260ea
 palette = 14=#8dd3fb
 palette = 15=#ffffff
 font-size = 14
+font-family = "IBM Plex Mono"
 
 macos-titlebar-style = tabs
 macos-titlebar-proxy-icon = hidden
